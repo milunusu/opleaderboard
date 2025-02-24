@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import data from './data.json';
 
@@ -11,27 +11,38 @@ import ThreeIcon from './images/three.svg';
 import ToggleIcon from './images/toggle.svg';
 import TooglegIcon from './images/toggleg.svg';
 
+// Import new images
+import IndividualImage from './images/individual.svg';
+import GroupsImage from './images/groups.svg';
+
 // Map category names to their corresponding SVG file paths (colored and grey)
 const categoryIcons = {
-  Badgeholders: {
-    colored: '/images/Badgeholder.svg',
-    grey: '/images/badgeholderg.svg',
+  Citizens: {
+    colored: '/images/citizens.svg',
+    grey: '/images/citizensg.svg',
   },
-  "Polymarket Users": {
-    colored: '/images/polymarketUsers.svg',
-    grey: '/images/polymarketg.svg',
+  "Retro Funding Contribution": {
+    colored: '/images/rcontribution.svg',
+    grey: '/images/rcontribitiong.svg',
   },
-  "Farcaster Users": {
-    colored: '/images/farcaster.svg',
-    grey: '/images/farcasterg.svg',
+  "Top 100 Delegate": {
+    colored: '/images/topdelegate.svg',
+    grey: '/images/topdelegateg.svg',
   },
   "Retro Funding Voters": {
-    colored: '/images/RetroFundingVoter.svg',
+    colored: '/images/rfvoter.svg',
     grey: '/images/rfvoterg.svg',
   },
-  Delegates: {
-    colored: '/images/Delegates.svg',
-    grey: '/images/delegateg.svg',
+  "Governance Contribution": {
+    colored: '/images/governancec.svg',
+    grey: '/images/governancecg.svg',
+  },
+  "Truemarket Attesters": {
+    colored: '/images/truemarket.svg',
+    grey: '/images/truemarketg.svg',
+  },
+  "Unaffiliated User": {
+    colored: '/images/unaffiliated.svg',
   },
 };
 
@@ -47,6 +58,9 @@ function App() {
   const rowsPerPage = 10;
 
   const totalPages = Math.ceil(participants.length / rowsPerPage);
+
+  // Reference for the header
+  const headerRef = useRef(null);
 
   // Calculate startingAmount, numberOfUsers, totalProfitUSD, and averageProfitPercentage for each group
   useEffect(() => {
@@ -88,6 +102,24 @@ function App() {
     setGroups(updatedGroups);
   }, [participants]);
 
+  // Handle header hide/show on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop === 0) {
+        // At the top of the page, show the header
+        headerRef.current.classList.remove('hide');
+      } else {
+        // Not at the top, hide the header
+        headerRef.current.classList.add('hide');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   // Helper function to render position (icon or number)
   const renderPosition = (position) => {
     if (position === 1) {
@@ -126,11 +158,13 @@ function App() {
       } else if (key === 'categories') {
         // Custom sorting logic for categories
         const categoryOrder = [
-          'Badgeholders',
-          'Delegates',
-          'Farcaster Users',
+          'Citizens',
+          'Retro Funding Contribution',
+          'Top 100 Delegate',
           'Retro Funding Voters',
-          'Polymarket Users',
+          'Governance Contribution',
+          'Truemarket Attesters',
+          'Unaffiliated User',
         ];
         const categoryIndexA = categoryOrder.indexOf(a.categories[categorySortStep % categoryOrder.length]);
         const categoryIndexB = categoryOrder.indexOf(b.categories[categorySortStep % categoryOrder.length]);
@@ -158,13 +192,23 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="/images/LOGO.svg" alt="Leaderboard Logo" style={{ width: '418px', height: '108px', padding: '40px', marginLeft: '700px' }} />
+      <header className="App-header" ref={headerRef}>
+        <img src="/images/LOGO.svg" alt="Leaderboard Logo"  />
+        <h1>Futarchy<br />Experiment</h1>
       </header>
 
       <div className="container">
         {/* Participants List */}
         <div className="section">
+          {/* Add individual.svg image */}
+          <div style={{ textAlign: 'right', marginBottom: '10px' }}>
+  <img 
+    src={IndividualImage} 
+    alt="Individual" 
+    style={{ width: '22%', maxWidth: '200px', height: 'auto' }} // Responsive sizing
+  />
+</div>
+
           <table className="styled-table">
             <thead>
               <tr>
@@ -235,7 +279,7 @@ function App() {
                       alt="toggle"
                       style={{ width: '8px', height: '6px', marginRight: '1px' }}
                     />
-                    Profit (USD)
+                    Profit (PLAY)
                   </div>
                 </th>
                 <th
@@ -264,16 +308,16 @@ function App() {
                     <td className="left-align" style={{ paddingLeft: '20px' }}>{displayName}</td>
                     <td className="center-align">
                       <div className="category-icons" style={{ padding: '0', margin: '0' }}>
-                        {Object.keys(categoryIcons).map((category) => {
+                        {['Citizens', 'Retro Funding Contribution', 'Top 100 Delegate', 'Retro Funding Voters', 'Governance Contribution', 'Truemarket Attesters'].map((category) => {
                           const isActive = participant.categories.includes(category);
                           const iconSrc = isActive ? categoryIcons[category].colored : categoryIcons[category].grey;
                           return <img key={category} src={iconSrc} alt={category} style={{ width: '20px', height: '20px', margin: '0', padding: '0' }} />;
                         })}
                       </div>
                     </td>
-                    <td>${participant.startingAmount}</td>
-                    <td>${participant.currentValue}</td>
-                    <td style={{ color: participant.profitUSD >= 0 ? 'green' : 'red' }}>${participant.profitUSD}</td>
+                    <td>{participant.startingAmount}</td>
+                    <td>{participant.currentValue}</td>
+                    <td style={{ color: participant.profitUSD >= 0 ? 'green' : 'red' }}>{participant.profitUSD}</td>
                     <td style={{ color: participant.profitPercentage >= 0 ? 'green' : 'red' }}>{participant.profitPercentage}%</td>
                   </tr>
                 );
@@ -325,10 +369,19 @@ function App() {
 
         {/* Groups List */}
         <div className="section">
+          {/* Add groups.svg image */}
+          <div style={{ textAlign: 'right', marginBottom: '10px' }}>
+  <img 
+    src={GroupsImage} 
+    alt="Groups" 
+    style={{ width: '22%', maxWidth: '200px', height: 'auto' }} // Responsive sizing
+  />
+</div>
+
           <table className="styled-table">
             <thead>
               <tr>
-                <th style={{ textAlign: 'center'}}>#</th>
+                <th style={{ textAlign: 'center', paddingRight: '20px' }}>#</th>
                 <th
                   className={`left-align ${isSortedColumn('groupName') ? 'active' : ''}`}
                   onClick={() => sortData('groupName', groups, setGroups)}
@@ -379,7 +432,7 @@ function App() {
                       alt="toggle"
                       style={{ width: '8px', height: '6px', marginRight: '1px' }}
                     />
-                    Profit (USD)
+                    Profit (PLAY)
                   </div>
                 </th>
                 <th
@@ -418,8 +471,8 @@ function App() {
                       </div>
                     </td>
                     <td>{group.numberOfUsers}</td>
-                    <td>${group.startingAmount}</td>
-                    <td style={{ color: group.totalProfitUSD >= 0 ? 'green' : 'red' }}>${group.totalProfitUSD}</td>
+                    <td>{group.startingAmount}</td> {/* Removed the "$" symbol */}
+                    <td style={{ color: group.totalProfitUSD >= 0 ? 'green' : 'red' }}>{group.totalProfitUSD}</td> {/* Removed the "$" symbol */}
                     <td style={{ color: group.averageProfitPercentage >= 0 ? 'green' : 'red' }}>
                       {group.averageProfitPercentage.toFixed(2)}%
                     </td>

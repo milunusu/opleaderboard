@@ -1,335 +1,348 @@
 {
-    "lastUpdated": "2025-01-19T17:00:00Z",
-    "participants": [
+  "lastUpdated": "2025-01-19T17:00:00Z",
+  "participants": [
+    {
+      "walletAddress": "0xAAAA1111AAAA1111AAAA1111AAAA1111AAAA1111",
+      "ensName": "alice.eth",
+      "categories": ["Citizens", "Retro Funding Contribution"],
+      "startingAmount": 1000,
+      "currentValue": 1300,
+      "profitUSD": 300,
+      "profitPercentage": 30
+    },
+    {
+      "walletAddress": "0xBBBB2222BBBB2222BBBB2222BBBB2222BBBB2222",
+      "ensName": "",
+      "categories": ["Top 100 Delegate", "Retro Funding Voters"],
+      "startingAmount": 1000,
+      "currentValue": 900,
+      "profitUSD": -100,
+      "profitPercentage": -10
+    },
+    {
+      "walletAddress": "0xCCCC3333CCCC3333CCCC3333CCCC3333CCCC3333",
+      "ensName": "charlie.eth",
+      "categories": ["Governance Contribution"],
+      "startingAmount": 1000,
+      "currentValue": 1250,
+      "profitUSD": 250,
+      "profitPercentage": 25
+    },
+    {
+      "walletAddress": "0xDDDD4444DDDD4444DDDD4444DDDD4444DDDD4444",
+      "ensName": "",
+      "categories": ["Unaffiliated User"],
+      "startingAmount": 2000,
+      "currentValue": 2200,
+      "profitUSD": 200,
+      "profitPercentage": 10
+    },
+    {
+      "walletAddress": "0xEEEE5555EEEE5555EEEE5555EEEE5555EEEE5555",
+      "ensName": "eva.eth",
+      "categories": ["Retro Funding Voters", "Citizens"],
+      "startingAmount": 1000,
+      "currentValue": 800,
+      "profitUSD": -200,
+      "profitPercentage": -20
+    },
+    {
+      "walletAddress": "0xFFFF6666FFFF6666FFFF6666FFFF6666FFFF6666",
+      "ensName": "frank.eth",
+      "categories": ["Unaffiliated User"],
+      "startingAmount": 2000,
+      "currentValue": 2100,
+      "profitUSD": 100,
+      "profitPercentage": 5
+    },
+    {
+      "walletAddress": "0x1111777711117777111177771111777711117777",
+      "ensName": "",
+      "categories": ["Governance Contribution", "Retro Funding Contribution"],
+      "startingAmount": 1000,
+      "currentValue": 1400,
+      "profitUSD": 400,
+      "profitPercentage": 40
+    },
+    {
+      "walletAddress": "0x2222888822228888222288882222888822228888",
+      "ensName": "george.eth",
+      "categories": ["Top 100 Delegate"],
+      "startingAmount": 1000,
+      "currentValue": 1000,
+      "profitUSD": 0,
+      "profitPercentage": 0
+    },
+    {
+      "walletAddress": "0x3333999933339999333399993333999933339999",
+      "ensName": "hannah.eth",
+      "categories": ["Citizens", "Retro Funding Voters"],
+      "startingAmount": 1500,
+      "currentValue": 1800,
+      "profitUSD": 300,
+      "profitPercentage": 20
+    },
+    {
+      "walletAddress": "0x4444000044440000444400004444000044440000",
+      "ensName": "",
+      "categories": ["Unaffiliated User"],
+      "startingAmount": 1200,
+      "currentValue": 1100,
+      "profitUSD": -100,
+      "profitPercentage": -8.3
+    },
+    {
+      "walletAddress": "0x5555111155551111555511115555111155551111",
+      "ensName": "isla.eth",
+      "categories": ["Top 100 Delegate", "Governance Contribution"],
+      "startingAmount": 1100,
+      "currentValue": 1500,
+      "profitUSD": 400,
+      "profitPercentage": 36.36
+    },
+    {
+      "walletAddress": "0x6666222266662222666622226666222266662222",
+      "ensName": "",
+      "categories": ["Citizens"],
+      "startingAmount": 1200,
+      "currentValue": 1400,
+      "profitUSD": 200,
+      "profitPercentage": 16.67
+    },
+    {
+      "walletAddress": "0x7777333377773333777733337777333377773333",
+      "ensName": "jack.eth",
+      "categories": [ "Retro Funding Voters"],
+      "startingAmount": 1000,
+      "currentValue": 900,
+      "profitUSD": -100,
+      "profitPercentage": -10
+    },
+    {
+      "walletAddress": "0x8888444488884444888844448888444488884444",
+      "ensName": "",
+      "categories": ["Retro Funding Voters"],
+      "startingAmount": 1300,
+      "currentValue": 1600,
+      "profitUSD": 300,
+      "profitPercentage": 23.08
+    },
+    {
+      "walletAddress": "0x9999555599995555999955559999555599995555",
+      "ensName": "karen.eth",
+      "categories": ["Unaffiliated User"],
+      "startingAmount": 1400,
+      "currentValue": 1300,
+      "profitUSD": -100,
+      "profitPercentage": -7.14
+    },
+    {
+      "walletAddress": "0xAAAA6666AAAA6666AAAA6666AAAA6666AAAA6666",
+      "ensName": "",
+      "categories": ["Top 100 Delegate", "Citizens"],
+      "startingAmount": 2000,
+      "currentValue": 2400,
+      "profitUSD": 400,
+      "profitPercentage": 20
+    },
+    {
+      "walletAddress": "0xBBBB7777BBBB7777BBBB7777BBBB7777BBBB7777",
+      "ensName": "lucas.eth",
+      "categories": ["Retro Funding Voters", "Truemarket Attesters"],
+      "startingAmount": 1500,
+      "currentValue": 1400,
+      "profitUSD": -100,
+      "profitPercentage": -6.67
+    },
+    {
+      "walletAddress": "0xCCCC8888CCCC8888CCCC8888CCCC8888CCCC8888",
+      "ensName": "",
+      "categories": ["Retro Funding Voters", "Governance Contribution"],
+      "startingAmount": 1600,
+      "currentValue": 1900,
+      "profitUSD": 300,
+      "profitPercentage": 18.75
+    },
+    {
+      "walletAddress": "0xDDDD9999DDDD9999DDDD9999DDDD9999DDDD9999",
+      "ensName": "mia.eth",
+      "categories": ["Citizens", "Top 100 Delegate", "Retro Funding Contribution"],
+      "startingAmount": 1100,
+      "currentValue": 1700,
+      "profitUSD": 600,
+      "profitPercentage": 54.55
+    },
+    {
+      "walletAddress": "0xEEEE0000EEEE0000EEEE0000EEEE0000EEEE0000",
+      "ensName": "nina.eth",
+      "categories": ["Citizens", "Retro Funding Voters"],
+      "startingAmount": 1000,
+      "currentValue": 1300,
+      "profitUSD": 300,
+      "profitPercentage": 30
+    },
+    {
+      "walletAddress": "0xFFFFAAAAFFFFAAAAFFFFAAAAFFFFAAAAFFFFAAAA",
+      "ensName": "",
+      "categories": ["Top 100 Delegate", "Governance Contribution"],
+      "startingAmount": 1400,
+      "currentValue": 1200,
+      "profitUSD": -200,
+      "profitPercentage": -14.29
+    },
+    {
+      "walletAddress": "0x1111BBBB1111BBBB1111BBBB1111BBBB1111BBBB",
+      "ensName": "oscar.eth",
+      "categories": ["Citizens", "Retro Funding Contribution"],
+      "startingAmount": 1700,
+      "currentValue": 1800,
+      "profitUSD": 100,
+      "profitPercentage": 5.88
+    },
+    {
+      "walletAddress": "0x2222CCCC2222CCCC2222CCCC2222CCCC2222CCCC",
+      "ensName": "peter.eth",
+      "categories": ["Retro Funding Voters", "Truemarket Attesters"],
+      "startingAmount": 1200,
+      "currentValue": 1100,
+      "profitUSD": -100,
+      "profitPercentage": -8.33
+    },
+    {
+      "walletAddress": "0x3333DDDD3333DDDD3333DDDD3333DDDD3333DDDD",
+      "ensName": "",
+      "categories": ["Retro Funding Voters"],
+      "startingAmount": 1800,
+      "currentValue": 1500,
+      "profitUSD": -300,
+      "profitPercentage": -16.67
+    },
+    {
+      "walletAddress": "0x4444EEEE4444EEEE4444EEEE4444EEEE4444EEEE",
+      "ensName": "quinn.eth",
+      "categories": ["Citizens"],
+      "startingAmount": 1000,
+      "currentValue": 1600,
+      "profitUSD": 600,
+      "profitPercentage": 60
+    },
+    {
+      "walletAddress": "0x5555FFFF5555FFFF5555FFFF5555FFFF5555FFFF",
+      "ensName": "rose.eth",
+      "categories": ["Top 100 Delegate", "Retro Funding Contribution"],
+      "startingAmount": 1000,
+      "currentValue": 1200,
+      "profitUSD": 200,
+      "profitPercentage": 20
+    },
+    {
+      "walletAddress": "0x6666000066660000666600006666000066660000",
+      "ensName": "sophia.eth",
+      "categories": ["Retro Funding Voters"],
+      "startingAmount": 1500,
+      "currentValue": 1400,
+      "profitUSD": -100,
+      "profitPercentage": -6.67
+    },
+    {
+      "walletAddress": "0x7777111177771111777711117777111177771111",
+      "ensName": "",
+      "categories": ["Retro Funding Voters", "Governance Contribution"],
+      "startingAmount": 1200,
+      "currentValue": 1300,
+      "profitUSD": 100,
+      "profitPercentage": 8.33
+    },
+    {
+      "walletAddress": "0x8888222288882222888822228888222288882222",
+      "ensName": "toby.eth",
+      "categories": ["Citizens", "Truemarket Attesters"],
+      "startingAmount": 1100,
+      "currentValue": 1300,
+      "profitUSD": 200,
+      "profitPercentage": 18.18
+    },
+    {
+      "walletAddress": "0x9999333399993333999933339999333399993333",
+      "ensName": "",
+      "categories": ["Top 100 Delegate", "Retro Funding Contribution"],
+      "startingAmount": 1400,
+      "currentValue": 1600,
+      "profitUSD": 200,
+      "profitPercentage": 14.29
+    },
+    {
+      "walletAddress": "0xAAAA4444AAAA4444AAAA4444AAAA4444AAAA4444",
+      "ensName": "ursula.eth",
+      "categories": ["Retro Funding Voters"],
+      "startingAmount": 2000,
+      "currentValue": 2100,
+      "profitUSD": 100,
+      "profitPercentage": 5
+    },
+    {
+      "walletAddress": "0xBBBB5555BBBB5555BBBB5555BBBB5555BBBB5555",
+      "ensName": "violet.eth",
+      "categories": ["Citizens"],
+      "startingAmount": 1000,
+      "currentValue": 1300,
+      "profitUSD": 300,
+      "profitPercentage": 30
+    },
+    {
+      "walletAddress": "0xCCCC6666CCCC6666CCCC6666CCCC6666CCCC6666",
+      "ensName": "",
+      "categories": ["Top 100 Delegate", "Governance Contribution"],
+      "startingAmount": 1500,
+      "currentValue": 1400,
+      "profitUSD": -100,
+      "profitPercentage": -6.67
+    },
+    {
+      "walletAddress": "0xDDDD7777DDDD7777DDDD7777DDDD7777DDDD7777",
+      "ensName": "will.eth",
+      "categories": ["Truemarket Attestors"],
+      "startingAmount": 1200,
+      "currentValue": 1300,
+      "profitUSD": 100,
+      "profitPercentage": 8.33
+    },
+    {
+      "walletAddress": "mimiop.eth",
+      "ensName": "mimiop.eth",
+      "categories": ["Unaffiliated User"],
+      "startingAmount": 1200,
+      "currentValue": 1300,
+      "profitUSD": 100,
+      "profitPercentage": 8.33
+    },
+    {
+      "walletAddress": "0xEEEE8888EEEE8888EEEE8888EEEE8888EEEE8888",
+      "ensName": "",
+      "categories": ["Citizens", "Retro Funding Voters", "Truemarket Attesters"],
+      "startingAmount": 2000,
+      "currentValue": 2400,
+      "profitUSD": 400,
+      "profitPercentage": 20
+    }
+  ],
+
+    
+    
+      
+       "groups": [
       {
-        "walletAddress": "0xAAAA1111AAAA1111AAAA1111AAAA1111AAAA1111",
-        "ensName": "alice.eth",
-        "categories": ["Badgeholders", "Farcaster Users"],
-        "startingAmount": 1000,
-        "currentValue": 1300,
-        "profitUSD": 300,
-        "profitPercentage": 30
-      },
-      {
-        "walletAddress": "0xBBBB2222BBBB2222BBBB2222BBBB2222BBBB2222",
-        "ensName": "",
-        "categories": ["Polymarket Users", "Retro Funding Voters"],
-        "startingAmount": 1000,
-        "currentValue": 900,
-        "profitUSD": -100,
-        "profitPercentage": -10
-      },
-      {
-        "walletAddress": "0xCCCC3333CCCC3333CCCC3333CCCC3333CCCC3333",
-        "ensName": "charlie.eth",
-        "categories": ["Delegate", "Badgeholders"],
-        "startingAmount": 1000,
-        "currentValue": 1250,
-        "profitUSD": 250,
-        "profitPercentage": 25
-      },
-      {
-        "walletAddress": "0xDDDD4444DDDD4444DDDD4444DDDD4444DDDD4444",
-        "ensName": "",
-        "categories": ["Farcaster Users"],
-        "startingAmount": 2000,
-        "currentValue": 2200,
-        "profitUSD": 200,
-        "profitPercentage": 10
-      },
-      {
-        "walletAddress": "0xEEEE5555EEEE5555EEEE5555EEEE5555EEEE5555",
-        "ensName": "eva.eth",
-        "categories": ["Retro Funding Voters", "Delegate"],
-        "startingAmount": 1000,
-        "currentValue": 800,
-        "profitUSD": -200,
-        "profitPercentage": -20
-      },
-      {
-        "walletAddress": "0xFFFF6666FFFF6666FFFF6666FFFF6666FFFF6666",
-        "ensName": "frank.eth",
-        "categories": ["Badgeholders"],
-        "startingAmount": 2000,
-        "currentValue": 2100,
-        "profitUSD": 100,
-        "profitPercentage": 5
-      },
-      {
-        "walletAddress": "0x1111777711117777111177771111777711117777",
-        "ensName": "",
-        "categories": ["Polymarket Users", "Farcaster Users"],
-        "startingAmount": 1000,
-        "currentValue": 1400,
-        "profitUSD": 400,
-        "profitPercentage": 40
-      },
-      {
-        "walletAddress": "0x2222888822228888222288882222888822228888",
-        "ensName": "george.eth",
-        "categories": ["Delegate"],
-        "startingAmount": 1000,
-        "currentValue": 1000,
-        "profitUSD": 0,
-        "profitPercentage": 0
-      },
-      {
-        "walletAddress": "0x3333999933339999333399993333999933339999",
-        "ensName": "hannah.eth",
-        "categories": ["Badgeholders", "Farcaster Users"],
-        "startingAmount": 1500,
-        "currentValue": 1800,
-        "profitUSD": 300,
-        "profitPercentage": 20
-      },
-      {
-        "walletAddress": "0x4444000044440000444400004444000044440000",
-        "ensName": "",
-        "categories": ["Polymarket Users", "Retro Funding Voters"],
-        "startingAmount": 1200,
-        "currentValue": 1100,
-        "profitUSD": -100,
-        "profitPercentage": -8.3
-      },
-      {
-        "walletAddress": "0x5555111155551111555511115555111155551111",
-        "ensName": "isla.eth",
-        "categories": ["Delegate"],
-        "startingAmount": 1100,
-        "currentValue": 1500,
-        "profitUSD": 400,
-        "profitPercentage": 36.36
-      },
-      {
-        "walletAddress": "0x6666222266662222666622226666222266662222",
-        "ensName": "",
-        "categories": ["Farcaster Users"],
-        "startingAmount": 1200,
-        "currentValue": 1400,
-        "profitUSD": 200,
-        "profitPercentage": 16.67
-      },
-      {
-        "walletAddress": "0x7777333377773333777733337777333377773333",
-        "ensName": "jack.eth",
-        "categories": ["Badgeholders"],
-        "startingAmount": 1000,
-        "currentValue": 900,
-        "profitUSD": -100,
-        "profitPercentage": -10
-      },
-      {
-        "walletAddress": "0x8888444488884444888844448888444488884444",
-        "ensName": "",
-        "categories": ["Retro Funding Voters"],
-        "startingAmount": 1300,
-        "currentValue": 1600,
-        "profitUSD": 300,
-        "profitPercentage": 23.08
-      },
-      {
-        "walletAddress": "0x9999555599995555999955559999555599995555",
-        "ensName": "karen.eth",
-        "categories": ["Polymarket Users"],
-        "startingAmount": 1400,
-        "currentValue": 1300,
-        "profitUSD": -100,
-        "profitPercentage": -7.14
-      },
-      {
-        "walletAddress": "0xAAAA6666AAAA6666AAAA6666AAAA6666AAAA6666",
-        "ensName": "",
-        "categories": ["Delegate", "Farcaster Users"],
-        "startingAmount": 2000,
-        "currentValue": 2400,
-        "profitUSD": 400,
-        "profitPercentage": 20
-      },
-      {
-        "walletAddress": "0xBBBB7777BBBB7777BBBB7777BBBB7777BBBB7777",
-        "ensName": "lucas.eth",
-        "categories": ["Badgeholders"],
-        "startingAmount": 1500,
-        "currentValue": 1400,
-        "profitUSD": -100,
-        "profitPercentage": -6.67
-      },
-      {
-        "walletAddress": "0xCCCC8888CCCC8888CCCC8888CCCC8888CCCC8888",
-        "ensName": "",
-        "categories": ["Retro Funding Voters"],
-        "startingAmount": 1600,
-        "currentValue": 1900,
-        "profitUSD": 300,
-        "profitPercentage": 18.75
-      },
-      {
-        "walletAddress": "0xDDDD9999DDDD9999DDDD9999DDDD9999DDDD9999",
-        "ensName": "mia.eth",
-        "categories": ["Farcaster Users", "Delegate", "Badgeholders","Polymarket Users","Retro Funding Voters"],
-        "startingAmount": 1100,
-        "currentValue": 1700,
-        "profitUSD": 600,
-        "profitPercentage": 54.55
-      },
-      {
-        "walletAddress": "0xEEEE0000EEEE0000EEEE0000EEEE0000EEEE0000",
-        "ensName": "nina.eth",
-        "categories": ["Badgeholders", "Retro Funding Voters"],
-        "startingAmount": 1000,
-        "currentValue": 1300,
-        "profitUSD": 300,
-        "profitPercentage": 30
-      },
-      {
-        "walletAddress": "0xFFFFAAAAFFFFAAAAFFFFAAAAFFFFAAAAFFFFAAAA",
-        "ensName": "",
-        "categories": ["Delegate", "Badgeholders"],
-        "startingAmount": 1400,
-        "currentValue": 1200,
-        "profitUSD": -200,
-        "profitPercentage": -14.29
-      },
-      {
-        "walletAddress": "0x1111BBBB1111BBBB1111BBBB1111BBBB1111BBBB",
-        "ensName": "oscar.eth",
-        "categories": ["Farcaster Users", "Polymarket Users"],
-        "startingAmount": 1700,
-        "currentValue": 1800,
-        "profitUSD": 100,
-        "profitPercentage": 5.88
-      },
-      {
-        "walletAddress": "0x2222CCCC2222CCCC2222CCCC2222CCCC2222CCCC",
-        "ensName": "peter.eth",
-        "categories": ["Badgeholders"],
-        "startingAmount": 1200,
-        "currentValue": 1100,
-        "profitUSD": -100,
-        "profitPercentage": -8.33
-      },
-      {
-        "walletAddress": "0x3333DDDD3333DDDD3333DDDD3333DDDD3333DDDD",
-        "ensName": "",
-        "categories": ["Retro Funding Voters", "Delegate"],
-        "startingAmount": 1800,
-        "currentValue": 1500,
-        "profitUSD": -300,
-        "profitPercentage": -16.67
-      },
-      {
-        "walletAddress": "0x4444EEEE4444EEEE4444EEEE4444EEEE4444EEEE",
-        "ensName": "quinn.eth",
-        "categories": ["Farcaster Users"],
-        "startingAmount": 1000,
-        "currentValue": 1600,
-        "profitUSD": 600,
-        "profitPercentage": 60
-      },
-      {
-        "walletAddress": "0x5555FFFF5555FFFF5555FFFF5555FFFF5555FFFF",
-        "ensName": "rose.eth",
-        "categories": ["Delegate", "Polymarket Users"],
-        "startingAmount": 1000,
-        "currentValue": 1200,
-        "profitUSD": 200,
-        "profitPercentage": 20
-      },
-      {
-        "walletAddress": "0x6666000066660000666600006666000066660000",
-        "ensName": "sophia.eth",
-        "categories": ["Badgeholders"],
-        "startingAmount": 1500,
-        "currentValue": 1400,
-        "profitUSD": -100,
-        "profitPercentage": -6.67
-      },
-      {
-        "walletAddress": "0x7777111177771111777711117777111177771111",
-        "ensName": "",
-        "categories": ["Retro Funding Voters", "Polymarket Users"],
-        "startingAmount": 1200,
-        "currentValue": 1300,
-        "profitUSD": 100,
-        "profitPercentage": 8.33
-      },
-      {
-        "walletAddress": "0x8888222288882222888822228888222288882222",
-        "ensName": "toby.eth",
-        "categories": ["Farcaster Users"],
-        "startingAmount": 1100,
-        "currentValue": 1300,
-        "profitUSD": 200,
-        "profitPercentage": 18.18
-      },
-      {
-        "walletAddress": "0x9999333399993333999933339999333399993333",
-        "ensName": "",
-        "categories": ["Delegate", "Badgeholders"],
-        "startingAmount": 1400,
-        "currentValue": 1600,
-        "profitUSD": 200,
-        "profitPercentage": 14.29
-      },
-      {
-        "walletAddress": "0xAAAA4444AAAA4444AAAA4444AAAA4444AAAA4444",
-        "ensName": "ursula.eth",
-        "categories": ["Retro Funding Voters"],
-        "startingAmount": 2000,
-        "currentValue": 2100,
-        "profitUSD": 100,
-        "profitPercentage": 5
-      },
-      {
-        "walletAddress": "0xBBBB5555BBBB5555BBBB5555BBBB5555BBBB5555",
-        "ensName": "violet.eth",
-        "categories": ["Farcaster Users", "Badgeholders"],
-        "startingAmount": 1000,
-        "currentValue": 1300,
-        "profitUSD": 300,
-        "profitPercentage": 30
-      },
-      {
-        "walletAddress": "0xCCCC6666CCCC6666CCCC6666CCCC6666CCCC6666",
-        "ensName": "",
-        "categories": ["Polymarket Users", "Delegate"],
-        "startingAmount": 1500,
-        "currentValue": 1400,
-        "profitUSD": -100,
-        "profitPercentage": -6.67
-      },
-      {
-        "walletAddress": "0xDDDD7777DDDD7777DDDD7777DDDD7777DDDD7777",
-        "ensName": "will.eth",
-        "categories": ["Badgeholders"],
-        "startingAmount": 1200,
-        "currentValue": 1300,
-        "profitUSD": 100,
-        "profitPercentage": 8.33
-      },
-      {
-        "walletAddress": "0xEEEE8888EEEE8888EEEE8888EEEE8888EEEE8888",
-        "ensName": "",
-        "categories": ["Farcaster Users", "Retro Funding Voters"],
-        "startingAmount": 2000,
-        "currentValue": 2400,
-        "profitUSD": 400,
-        "profitPercentage": 20
-      }
-    ],
-    "groups": [
-      {
-        "groupName": "Badgeholders",
+        "groupName": "Citizens",
         "totalProfitUSD": 450,
         "averageProfitPercentage": 15
       },
       {
-        "groupName": "Polymarket Users",
+        "groupName": "Truemarket Attesters",
         "totalProfitUSD": 150,
         "averageProfitPercentage": 1
       },
       {
-        "groupName": "Farcaster Users",
+        "groupName": "Governance Contribution",
         "totalProfitUSD": 300,
         "averageProfitPercentage": 8.3
       },
@@ -339,8 +352,18 @@
         "averageProfitPercentage": 10
       },
       {
-        "groupName": "Delegates",
-        "totalProfitUSD": 250,
+        "groupName": "Top 100 Delegate",
+        "totalProfitUSD": 2250,
+        "averageProfitPercentage": 12.5
+      },
+      {
+        "groupName": "Retro Funding Contribution",
+        "totalProfitUSD": 2530,
+        "averageProfitPercentage": 12.5
+      },
+      {
+        "groupName": "Unaffiliated User",
+        "totalProfitUSD": 2540,
         "averageProfitPercentage": 12.5
       }
     ]
